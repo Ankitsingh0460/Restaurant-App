@@ -7,6 +7,7 @@ function Layout({ children }) {
     <Header></Header>
 
     <div>{children}</div>
+
     <Footer></Footer>
   </>
 

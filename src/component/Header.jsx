@@ -21,23 +21,21 @@ const Header = () => {
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <img src={Logo} alt="logo" height={"70"} width="200" />
+
       </Typography>
-      <Divider />
-      <ul className="mobile-navigation">
+
+      <ul className='mobile-navigationMenu'>
         <li>
-          <NavLink activeClassName="active" to={"/"}>
-            Home
-          </NavLink>
+          <Link to={"/"} >Home</Link>
         </li>
         <li>
-          <NavLink to={"/menu"}>Menu</NavLink>
+          <Link to={"/menu"} >Menu</Link>
         </li>
         <li>
-          <NavLink to={"/about"}>About</NavLink>
+          <Link to={"/contact"} >Contact</Link>
         </li>
         <li>
-          <NavLink to={"/contact"}>Contact</NavLink>
+          <Link to={"/about"} >About</Link>
         </li>
       </ul>
     </Box>
@@ -47,12 +45,11 @@ const Header = () => {
       <Box>
         <AppBar component={"nav"} sx={{ bgcolor: "black" }}>
           <Toolbar >
-            <IconButton>
-              <MenuIcon color='inharit' aria-label="open drawer" edge="start" sx={{
-                mr: 2, display: { sm: "none" },
-              }}
-                onClick={handleDrower}
-              ></MenuIcon>
+            <IconButton color='inherit' aria-label="open drawer" edge="start" sx={{
+              mr: 2, display: { sm: "none" },
+
+            }} onClick={handleDrawerToggle}>
+              <MenuIcon />
             </IconButton>
             <FastfoodIcon />
             <Typography color={"goldenrod"} variant='h6' component="div" sx={{ flexGrow: 1 }}
@@ -91,6 +88,7 @@ const Header = () => {
             {drawer}
           </Drawer>
         </Box>
+        <Toolbar />
       </Box>
     </>
   )

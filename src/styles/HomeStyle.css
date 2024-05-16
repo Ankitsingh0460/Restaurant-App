@@ -1,0 +1,38 @@
+.home {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headercontaint {
+  width: auto;
+  margin-left: 30px;
+}
+
+.home .headercontaint h1 {
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 70px;
+  color: black;
+}
+.home .headercontaint p {
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: lighter;
+  color: black;
+}
+.headercontaint button {
+  background-color: black;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 180px;
+  text-decoration: none;
+  color: white;
+}
